@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 101</title>
+</head>
+<body>
+  <h1>Tell Us About Yourself!</h1>
+  <form action="">
+
+    <div class="user-name">
+      <strong>Please tell us your name: </strong>
+      <input type="text" name="name" id="name">
+    </div>
+    
+    <br>
+    <div class="radio-buttons">
+      <strong>What is your gender?</strong>
+      <input type="radio" name="gender-select" id="male">
+      <label for="gender-select">Male</label>
+      <input type="radio" name="gender-select-2" id="female">
+      <label for="gender-select-2">Female</label>
+      <input type="radio" name="gender-select-3" id="Other">
+      <label for="gender-select-3">Other</label>
+    </div>
+    <br>
+    <div class="country-dropdown">
+      <strong>What country are you from?</strong>
+      <label for="country">
+        <select name="country" id="country-choices">
+          <option value="USA">USA</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Switzerland" selected>Switzerland</option>
+          <option value="Germany">Germany</option>
+          <option value="India">India</option>
+          <option value="Thailand">Thailand</option>
+        </select>
+      </label>
+    </div>
+    <br>
+    <div class="toc">
+
+      <strong>Do you accept the terms and conditions?</strong>
+      <input type="checkbox" name="toc-yes" id="toc-yes">
+      <label for="toc-yes">Yes</label>
+      <input type="checkbox" name="toc-no" id="toc-no">
+      <label for="toc-no">No</label>
+      <input type="checkbox" name="talk-about-it" id="talk-about-it">
+      <label for="talk-about-it">Come on... Let's talk about it</label>
+    </div>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

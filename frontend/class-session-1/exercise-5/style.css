@@ -1,0 +1,20 @@
+header {
+  background-color: greenyellow;
+  padding: 5px;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  margin-right: 15px;
+}
+
+a {
+  text-decoration:overline;
+  color: rgb(41, 131, 0);
+}
+
+a:hover {
+  color: red;
+  text-decoration: line-through;
+}
