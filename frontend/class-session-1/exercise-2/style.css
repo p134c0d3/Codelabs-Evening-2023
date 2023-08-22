@@ -1,0 +1,12 @@
+html {
+  background-color: blue;
+}
+
+p {
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+  border: 2px solid black;
+}
