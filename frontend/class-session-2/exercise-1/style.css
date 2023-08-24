@@ -1,0 +1,11 @@
+p {
+  background-color: blue;
+  color: aqua;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    background-color: aqua;
+    color: blue;
+  }
+}
