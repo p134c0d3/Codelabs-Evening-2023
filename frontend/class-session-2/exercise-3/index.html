@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Responsive Images</title>
+	</head>
+	<body>
+		<h1>Responsive Images</h1>
+
+		<div class="images">
+			<img
+				srcset="./img/img-480.jpg 480w, ./img/img-800.jpg 800w, ./img/img-1200.jpg 1200w"
+				sizes="(max-width: 1200px) 480px, 800px"
+				src="./img/img-480.jpg"
+				alt=""
+			/>
+		</div>
+	</body>
+</html>
