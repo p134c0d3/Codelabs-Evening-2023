@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			let names = {
+				name: "John",
+				age: 29,
+				occupation: "QA Analyst",
+			};
+			function keysAndValues(obj) {
+				let keys = Object.keys(obj).sort();
+				let values = Object.values(obj).sort();
+				// console.log(keys);
+				// console.log(values);
+
+				let myArr = [];
+				myArr.push(keys);
+				myArr.push(values);
+				console.log(myArr);
+			}
+
+			keysAndValues(names);
+		</script>
+	</body>
+</html>
