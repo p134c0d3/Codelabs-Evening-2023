@@ -15,25 +15,28 @@
 		</p>
 		<script>
 			function setupCounter() {
-				//// Define a count variable here
-				let countNum = 1;
+    // Define a count variable here
+		let count = 0;
 
-				 function counterStep () {
-					//// Increment and print the count
-					// countNum = countNum++;
-					countNum = countNum += 1;
-          // console.log(countNum);
-					return countNum
-				};
+    return function() {
+        // Increment and print the count
+				count++;
+				console.log(count);
+    }
+}
 
-        return counterStep();
-        
-			}
+// Create a counter instance and invoke it to test
 
-			//// Create a counter instance and invoke it to test
-
-      console.log(setupCounter());
-      // setupCounter();
+let myVar = setupCounter();
+myVar();
+myVar();
+myVar();
+myVar();
+myVar();
+myVar();
+myVar();
+myVar();
+myVar();
 		</script>
 	</body>
 </html>
