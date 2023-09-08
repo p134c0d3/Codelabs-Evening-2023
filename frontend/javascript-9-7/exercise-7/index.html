@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercise 7</title>
+	</head>
+	<body>
+		<h1>Exercise 7</h1>
+
+		<h2 style="margin: 25px">Answer:</h2>
+
+		<p style="margin: 50px">
+			So I created a function and defined a variable in it called countNum, and set the value = 1. I then created another function as the inner function and took that variable and set it to increment up. I returned that number and then returned the inner function. I called the outer function which showed the number that I set countNum to with + 1 added to it.
+		</p>
+		<script>
+			function setupCounter() {
+				//// Define a count variable here
+				let countNum = 1;
+
+				 function counterStep () {
+					//// Increment and print the count
+					// countNum = countNum++;
+					countNum = countNum += 1;
+          // console.log(countNum);
+					return countNum
+				};
+
+        return counterStep();
+        
+			}
+
+			//// Create a counter instance and invoke it to test
+
+      console.log(setupCounter());
+      // setupCounter();
+		</script>
+	</body>
+</html>

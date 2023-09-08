@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Exercise 4</h1>
+
+		<h2 style="margin: 25px">Answer:</h2>
+
+		<p style="margin: 50px">
+			First I declared a variable myName and set to 'John'. I then created a function and modified the value of that variable within the function. Since it's a global variable I had access to it within the function and was able to reassign the value to 'Tiffany'. I then created another function and declared the variable myName and set it to 'Jethro'. I was able to do this because the scope was within the function, and while myName was declared globally, it wasn't declared within that function.
+		</p>
+		<script>
+			let myName = "John";
+      console.log(myName);
+			// Declare a global variable here
+
+			function modifyGlobal() {
+        myName = "Tiffany"
+        console.log(myName);
+				// Try to modify the global variable here
+			}
+
+			function localScopeTest() {
+        let myName = "Jethro";
+        console.log(myName);
+				// Declare a local variable with the same name as the global variable
+			}
+
+
+      modifyGlobal();
+      localScopeTest();
+
+			// Call both functions here
+		</script>
+	</body>
+</html>

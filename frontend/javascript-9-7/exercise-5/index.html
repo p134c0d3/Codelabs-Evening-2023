@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Exercise 5</h1>
+
+		<h2 style="margin: 25px">Answer:</h2>
+
+		<p style="margin: 50px">
+			So I created functionFactory() which needed a parameter called 'param'. I then made a function inside of functionFactory() called factoryFunction() which utilized the parameter that was needed for the outer function, functionFactory(). This was logged to the console as the inner function had access to the parameter of the outer function since it is technically downstream, thus in scope.
+		</p>
+		<script>
+			function functionFactory(param) {
+				// Return a function that makes use of 'param'
+        function factoryFunction() {
+          console.log(`I'm returning the ${param} value that was passed into the outer function!`);
+        }
+        return factoryFunction();
+			}
+
+			// Create an instance of the inner function by invoking functionFactory with a parameter
+      functionFactory('Hello')
+		</script>
+	</body>
+</html>

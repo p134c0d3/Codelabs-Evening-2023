@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Exercise 6</h1>
+
+		<h2 style="margin: 25px">Answer:</h2>
+
+		<p style="margin: 50px">
+			I attempted to called the variable myPhrase before it was declared, which caused an error in the console as console.log is not able to access the contents of a variable before it has been defined. Variables are not hoisted like functions are. 
+		</p>
+		<script>
+			function hoistingTest() {
+    // Try printing a variable here
+    console.log(myPhrase);
+    
+    // Declare the variable after the console.log
+    let myPhrase = 'Hi there, I think it is going to be a good day!';
+}
+
+hoistingTest();
+
+		</script>
+	</body>
+</html>

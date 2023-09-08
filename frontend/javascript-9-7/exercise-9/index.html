@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercise 9</title>
+	</head>
+	<body>
+		<h1>Exercise 9</h1>
+
+		<h2 style="margin: 25px">Answer:</h2>
+
+		<p style="margin: 50px">
+			I created a global variable first, then created a function that accessed and then modified that global variable. I created a second function that attempted to modify a local variable before it was defined. This of course threw an error. <br> I then modified the first function by creating an inner function inside of it. This inner function also took the global variable and modified it yet once again.
+		</p>
+		<script>
+			let globalName = 'The World'
+      function firstVar() {
+        globalName = 'USA';
+        console.log(globalName);
+
+        function innerVar() {
+          globalName = 'Switzerland';
+          console.log(globalName);
+        }
+        return innerVar();
+      }
+
+      function secondVar() {
+        localName = 'Sparta';
+
+        let localName = 'Ozark';
+        
+      }
+
+
+      firstVar();
+      secondVar();
+
+		</script>
+	</body>
+</html>

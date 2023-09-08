@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Exercise 3</h1>
+
+		<h2 style="margin: 25px">Answer:</h2>
+
+		<p style="margin: 50px">
+      So I logged the parameter given into a variable, which is then able to be passed down into innerFunction() which I created inside of outerFunction(). I then called the variable that was defined in outerFunction(), and used it to log to the console in the innerFunction()
+    
+    </p>
+		<script>
+			
+      function outerFunction(name) {
+        let myName = name
+
+        function innerFunction() {
+          console.log(`Hi there, my name is ${myName}`)
+        }
+        return innerFunction()
+      }
+
+      outerFunction('John')
+
+		</script>
+	</body>
+</html>

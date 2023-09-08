@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Exercise 2</h1>
+
+		<h2 style="margin: 25px">Answer:</h2>
+
+		<p style="margin: 50px">
+      The reason that the hoistedFunction is able to be called without error before it's defined is because hoisting takes that function declaration, and moves to the top of the code block that it's within, thus declaring/defining the function before it is called. See console.
+    
+    </p>
+		<script>
+			function mainFunction() {
+				// Call the hoistedFunction here
+        hoistedFunction();
+				// Now, declare the hoistedFunction below
+        function hoistedFunction() {
+          console.log('I can access the console!')
+        }
+			}
+
+			mainFunction();
+		</script>
+	</body>
+</html>

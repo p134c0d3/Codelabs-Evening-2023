@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercise 7</title>
+	</head>
+	<body>
+		<h1>Exercise 7</h1>
+
+		<h2 style="margin: 25px">Answer:</h2>
+
+		<p style="margin: 50px">
+			I created a function, and set a variable 'counter' to 0 within that function. I then created another function (inner) that incremented that variables value until it reached the value of 10, and then the value was reset to 0. I then returned that inner function to the outer function.
+		</p>
+		<script>
+			function setCounter() {
+        let counter = 0;
+
+        function returnedCounter() {
+          while (counter < 9) {
+            counter++;
+            console.log(counter);
+            // return counter
+          } 
+          if (counter = 10) {
+            counter = 0
+          }
+          
+        }
+        return returnedCounter();
+      }
+
+
+      setCounter();
+		</script>
+	</body>
+</html>
